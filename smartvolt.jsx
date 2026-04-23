@@ -167,9 +167,9 @@ export default function SmartVolt() {
           </div>
           <div className="g3" style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:24,marginBottom:56}}>
             {[
-              {icon:"〰",color:"#2ECC71",tag:"FFT",title:"Analyse vibratoire",desc:"Capteur haute précision mesurant les fréquences de vibration en temps réel. Détection des déséquilibres et usures mécaniques avant rupture."},
-              {icon:"◉",color:"#0891B2",tag:"INFRAROUGE",title:"Capteur thermique",desc:"Monitoring de la température des composants. Identification des points chauds anormaux signalant un dysfonctionnement imminent."},
-              {icon:"⚡",color:"#2ECC71",tag:"NILM",title:"Mesure de courant",desc:"Analyse de la consommation électrique via algorithmes NILM. Isolation précise de la charge défaillante parmi les équipements."}
+              {icon:"〰",color:"#2ECC71",tag:"SANTÉ",title:"Surveillance Continue",desc:"Le capteur 'écoute' les vibrations et les variations de température de vos machines pour repérer les anomalies invisibles à l'œil nu."},
+              {icon:"◉",color:"#0891B2",tag:"ÉNERGIE",title:"Suivi Énergétique",desc:"Ne payez plus à l'aveugle. Visualisez exactement où part votre électricité et identifiez rapidement les appareils qui consomment trop."},
+              {icon:"⚡",color:"#2ECC71",tag:"ALERTE",title:"Alertes Immédiates",desc:"Recevez une notification directement sur mobile à la moindre défaillance, vous permettant d'intervenir avant que la panne finale n'arrive."}
             ].map(({icon,color,tag,title,desc})=>(
               <div key={title} className="card-glass" style={{padding:32}}>
                 <div style={{width:50,height:50,borderRadius:13,background:`rgba(${color==="#2ECC71"?"46,204,113":"8,145,178"},0.1)`,border:`1px solid ${color}38`,display:"flex",alignItems:"center",justifyContent:"center",fontSize:20,marginBottom:18}}>{icon}</div>
@@ -237,14 +237,14 @@ export default function SmartVolt() {
             </div>
             {/* Text */}
             <div>
-              <div className="section-label">L'IA SMARTVOLT</div>
-              <h2 style={{fontSize:38,fontWeight:800,lineHeight:1.12,marginBottom:22}}>Diagnostic précis.<br/><span className="grad-text">Panne par panne.</span></h2>
-              <p style={{fontSize:15.5,lineHeight:1.82,color:"rgba(232,244,248,0.58)",marginBottom:30,fontFamily:"'Inter',sans-serif",fontWeight:300}}>SmartVOLT intègre deux moteurs d'intelligence artificielle complémentaires pour identifier avec précision la pièce défaillante avant qu'elle ne vous coûte une immobilisation.</p>
+              <div className="section-label">VOTRE ASSISTANT INTELLIGENT</div>
+              <h2 style={{fontSize:38,fontWeight:800,lineHeight:1.12,marginBottom:22}}>L'Intelligence Artificielle<br/><span className="grad-text">à votre service.</span></h2>
+              <p style={{fontSize:15.5,lineHeight:1.82,color:"rgba(232,244,248,0.58)",marginBottom:30,fontFamily:"'Inter',sans-serif",fontWeight:300}}>SmartVOLT décode le comportement de vos machines en permanence, traduit ces données en recommandations simples et vous guide pour optimiser votre production.</p>
               <div style={{display:"flex",flexDirection:"column",gap:22}}>
                 {[
-                  {tag:"NILM",title:"Disaggregation énergétique",desc:"Non-Intrusive Load Monitoring : isolation de chaque charge électrique pour détecter les anomalies de consommation charge par charge."},
-                  {tag:"FFT",title:"Analyse fréquentielle",desc:"Transformée de Fourier Rapide appliquée aux vibrations. Détection des harmoniques anormales caractéristiques des défauts de roulements et engrenages."},
-                  {tag:"ML",title:"Apprentissage adaptatif",desc:"Modèle auto-apprenant qui se calibre sur votre installation spécifique pour éliminer les faux positifs et affiner les seuils d'alerte."}
+                  {tag:"COÛTS",title:"Réduction des Factures",desc:"Le système analyse vos consommations pour éliminer le gaspillage et suggérer des optimisations, ce qui réduit significativement vos coûts mensuels."},
+                  {tag:"ZÉRO FAUX",title:"Système Auto-apprenant",desc:"Le gadget apprend de vos habitudes et comprend le rythme de votre commerce pour ne vous alerter que lorsqu'il y a un véritable danger."},
+                  {tag:"RAPPORT",title:"Rapports d'Action Clairs",desc:"Pas besoin d'être ingénieur : recevez des bilans simplifiés avec des recommandations d'entretien faciles à comprendre par vous et votre électricien."}
                 ].map(({tag,title,desc})=>(
                   <div key={tag} style={{display:"flex",gap:16,alignItems:"flex-start"}}>
                     <div style={{minWidth:46,height:22,borderRadius:6,background:"rgba(46,204,113,0.1)",border:"1px solid rgba(46,204,113,0.28)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:9.5,fontWeight:700,color:"#2ECC71",letterSpacing:1}}>{tag}</div>
